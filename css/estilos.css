@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-    margin: 0;
+    padding-left: 50px;
 }
 
 .oso {
@@ -306,4 +306,13 @@ body {
 .pata.derecha .garra4 {
     top: 12px;
     right: 46px;
+}
+.nombre{
+    width: 500px;
+    height: 200px;
+    margin-top: 600px;
+    margin-left: -350px;
+}
+.h1{
+    color: white;
 }
