@@ -1,0 +1,309 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.oso {
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+
+.cabeza, .cuerpo, .pierna, .pata, .brazo, .ceja, .lengua, .garra, .estomago{
+    background-color: #8b5a2b;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset -5px -5px 15px #633b1f, inset 5px 5px 15px #a7764a;
+}
+
+.cabeza {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -5px -5px 15px #633b1f, inset 5px 5px 15px #a7764a;
+    z-index: 10;
+}
+
+.cuerpo {
+    width: 200px;
+    height: 250px;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -10px -10px 20px #633b1f, inset 10px 10px 20px #a7764a;
+    z-index: 1;
+}
+
+.oreja {
+    width: 50px;
+    height: 50px;
+    background-color: #8b5a2b;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset -5px -5px 10px #633b1f, inset 5px 5px 10px #a7764a;
+}
+
+.oreja.izquierda {
+    top: -20px;
+    left: -20px;
+}
+.oido.izquierdo{
+    width: 30px;
+    height: 30px;
+    background-color: #e679a6de;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset -5px -5px 10px #e679a6de, inset 5px 5px 10px #ffffff;
+}
+
+.oreja.derecha {
+    top: -20px;
+    right: -20px;
+}
+
+.oido.derecho{
+    width: 30px;
+    height: 30px;
+    background-color: #e679a6de;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset -5px -5px 10px #e679a6de, inset 5px 5px 10px #ffffff
+}
+
+.ojo {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset -2px -2px 5px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.ojo.izquierdo {
+    top: 50px;
+    left: 40px;
+}
+
+.pupila.izquierda{
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 7px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ojo.derecho {
+    top: 50px;
+    right: 40px;
+}
+
+.pupila.derecha{
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 3px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ceja {
+    width: 40px;
+    height: 10px;
+    background-color: #4a2e18;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: inset -2px -2px 5px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.ceja.izquierda {
+    top: 35px;
+    left: 30px;
+}
+
+.ceja.derecha {
+    top: 35px;
+    right: 30px;
+}
+
+.nariz {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -2px -2px 5px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.boca {
+    width: 50px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 0 0 25px 25px;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -2px -2px 5px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.lengua {
+    width: 20px;
+    height: 10px;
+    background-color: #f00;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -2px -2px 5px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.estomago{
+    width: 140px;
+    height: 170px;
+    background-color: white;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -2px -2px 30px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.brazo {
+    width: 40px;
+    height: 120px;
+    background-color: #8b5a2b;
+    position: absolute;
+    box-shadow: inset -5px -5px 10px #633b1f, inset 5px 5px 10px #a7764a;
+}
+
+.brazo.izquierdo {
+    top: 50px;
+    left: -20px;
+    transform: rotate(20deg);
+}
+
+.brazo.derecho {
+    top: 50px;
+    right: -20px;
+    transform: rotate(-20deg);
+}
+
+.garra {
+    width: 10px;
+    height: 25px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: inset -2px -2px 5px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.garra.izquierda {
+    top: 150px;
+    left: -20px;
+}
+
+.garra.derecha {
+    top: 150px;
+    right: -20px;
+}
+
+.pierna {
+    width: 60px;
+    height: 120px;
+    background-color: #8b5a2b;
+    position: absolute;
+    box-shadow: inset -5px -5px 10px #633b1f, inset 5px 5px 10px #a7764a;
+}
+
+.pierna.izquierda {
+    top: 320px;
+    left: 20px;
+}
+
+.pierna.derecha {
+    top: 320px;
+    right: 20px;
+}
+
+.pata {
+    width: 60px;
+    height: 30px;
+    background-color: #8b5a2b;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 10px #633b1f, inset 5px 5px 10px #a7764a;
+}
+
+.pata.izquierda {
+    top: 430px;
+    left: 10px;
+}
+
+.pata.derecha {
+    top: 430px;
+    right: 10px;
+}
+.garra1, .garra2, .garra3, .garra4 {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: inset -2px -2px 5px #00000066, inset 2px 2px 5px #ffffff66;
+}
+
+.pata.izquierda .garra1 {
+    top: 12px;
+    left: 2px;
+}
+
+.pata.izquierda .garra2 {
+    top: 12px;
+    left: 16px;
+}
+
+.pata.izquierda .garra3 {
+    top: 12px;
+    left: 31px;
+}
+
+.pata.izquierda .garra4 {
+    top: 12px;
+    left: 46px;
+}
+
+.pata.derecha .garra1 {
+    top: 12px;
+    right: 1px;
+}
+
+.pata.derecha .garra2 {
+    top: 12px;
+    right: 16px;
+}
+
+.pata.derecha .garra3 {
+    top: 12px;
+    right: 31px;
+}
+
+.pata.derecha .garra4 {
+    top: 12px;
+    right: 46px;
+}
